@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".Main2Activity">
+
+
+
+
+    <EditText
+        android:id="@+id/name_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Enter Story Name"/>
+
+    <Button
+        android:id="@+id/Select"
+        android:background="@drawable/background_rect"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Select" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/All_Story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Story Will Show Here"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textColorLink="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pitch"
+        android:layout_weight="1"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_pitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:progress="50" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        android:layout_weight="1"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:progress="40" />
+
+    <Button
+        android:id="@+id/button_speak"
+        android:background="@drawable/background_rect"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="Say it!" />
+
+
+    <Button
+        android:id="@+id/New_pic"
+        android:background="@drawable/background_rect"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="New Picture" />
+
+
+
+
+</LinearLayout>
